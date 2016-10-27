@@ -1,0 +1,10 @@
+---
+
+node_pkgs_list:
+  - bower
+  - generator-ctools-layout
+  - generator-drupalmodule
+  - grunt-cli
+  - gulp
+  - imageoptim-cli
+  - yo

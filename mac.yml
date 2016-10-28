@@ -67,7 +67,7 @@
     # Stage 3: Projects
     # --------------------------------------------------------------------------
 
-    - { role: projects, tags: ["projects","stage_3"] }
+    - { role: projects, tags: ["projects","stage_3","no_ci"] }
 
     # Stage 4: Remaining apps
     # --------------------------------------------------------------------------

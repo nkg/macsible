@@ -38,7 +38,7 @@
     - { cask_app_name: "alfred", tags: ["alfred","stage_1","sudo"], role: danbohea.cask-app }
     - { role: path_finder, tags: ["path_finder","stage_1"] }
     - { cask_app_name: "the-unarchiver", tags: ["the_unarchiver","stage_1"], role: danbohea.cask-app }
-    - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1","mac_os_10_10"], role: danbohea.cask-app }
+    - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1"], role: danbohea.cask-app }
     - { role: danbohea.skype, tags: ["skype","stage_1"] }
 
     # Stage 2: Essential dev
@@ -58,7 +58,7 @@
     - { cask_app_name: "sequel-pro", tags: ["sequel_pro","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "transmit", tags: ["transmit","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "imageoptim", tags: ["imageoptim","stage_2"], role: danbohea.cask-app }
-    - { role: danbohea.sketch, tags: ["sketch","stage_2","mac_os_10_10"] }
+    - { role: danbohea.sketch, tags: ["sketch","stage_2"] }
     - { cask_app_name: "xscope", tags: ["xscope","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "phpstorm", tags: ["phpstorm","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "slack", tags: ["slack","stage_2"], role: danbohea.cask-app }

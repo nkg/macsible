@@ -29,8 +29,10 @@ dock_apps:
 # ------------------------------------------------------------------------------
 
 projects_oss:
+  - { dest: "ansible_roles/macsible/ansible-role-dock-items", repo: "https://github.com/danbohea/ansible-role-dock-items" }
   - { dest: "bower-packages/bohea-sass-tools", repo: "git@github.com:danbohea/bohea-sass-tools.git" }
-  - { dest: "macsible_macsible", repo: "git@github.com:macsible/macsible.git" }
+  - { dest: "danbohea_macsible", repo: "https://github.com/danbohea/macsible.git" }
+  - { dest: "macsible_macsible", repo: "https://github.com/macsible/macsible.git" }
 
 # sketch
 # ------------------------------------------------------------------------------

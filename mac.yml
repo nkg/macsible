@@ -18,7 +18,6 @@
     - { brew_pkg_name: "lastpass-cli", brew_install_options: "with-pinentry,with-doc", tags: ["lastpass_cli","prep"], role: brew_pkg }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     - { role: atom, tags: ["atom","prep"] }
-    - { cask_app_name: "atext", role: danbohea.cask-app, tags: ["atext","stage_1"] }
     - { role: quick_look_plugins, tags: ["quick_look_plugins","prep"] }
     - { cask_app_name: "bettertouchtool", tags: ["bettertouchtool","prep"], role: danbohea.cask-app }
     - { role: terminal, tags: ["terminal","prep"] }

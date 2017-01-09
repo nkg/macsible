@@ -10,7 +10,7 @@
     domain: com.fournova.Tower2
     key: "{{ item.key }}"
     type: string
-    value: '"{{ item.value }}"'
+    value: "{{ item.value }}"
   with_items:
     - { name: "Use Homebrew Git binary", key: "GTUserDefaultsGitBinary", value: "/usr/local/bin/git"}
     - { name: "Set default directory for cloned projects", key: "GTUserDefaultsDefaultCloningDirectory", value: "${HOME}/Projects"}

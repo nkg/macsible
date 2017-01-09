@@ -22,7 +22,7 @@
   # command: "defaults write com.apple.terminal '{{ item }}' -string {{ terminal_profile_name }}"
   osx_defaults:
     domain: com.apple.terminal
-    key: "'{{ item }}'"
+    key: "{{ item }}"
     type: string
     value: "{{ terminal_profile_name }}"
   with_items:

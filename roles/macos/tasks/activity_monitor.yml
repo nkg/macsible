@@ -19,7 +19,6 @@
     - killall
 
 - name: Sort Activity Monitor results by CPU usage (1)
-  # command: defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
   osx_defaults:
     domain: com.apple.ActivityMonitor
     key: SortColumn

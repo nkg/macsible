@@ -5,7 +5,12 @@
   notify: brew cask cleanup
 
 - name: "{{ item.name }}"
-  command: defaults write com.fournova.Tower2 {{ item.key }} -string "{{ item.value }}"
+  # command: defaults write com.fournova.Tower2 {{ item.key }} -string "{{ item.value }}"
+  osx_defaults:
+    domain: com.fournova.Tower2
+    key: "{{ item.key }}"
+    type: string
+    value: '"{{ item.value }}"'
   with_items:
     - { name: "Use Homebrew Git binary", key: "GTUserDefaultsGitBinary", value: "/usr/local/bin/git"}
     - { name: "Set default directory for cloned projects", key: "GTUserDefaultsDefaultCloningDirectory", value: "${HOME}/Projects"}

@@ -1,10 +1,20 @@
 ---
 
-- name: Set HOME as the default location for new Finder windows
-  shell: defaults write com.apple.finder {{ item }}
-  with_items:
-    - NewWindowTarget -string "PfLo"
-    - NewWindowTargetPath -string "file://${HOME}/"
+- name: Set HOME as the default location for new Finder windows (1)
+  osx_defaults:
+    domain: com.apple.finder
+    key: NewWindowTarget
+    type: string
+    value: "PfLo"
+  notify:
+    - killall Finder
+
+- name: Set HOME as the default location for new Finder windows (2)
+  osx_defaults:
+    domain: com.apple.finder
+    key: NewWindowTargetPath
+    type: string
+    value: "file://${HOME}/"
   notify:
     - killall Finder
 
@@ -30,7 +40,11 @@
     - killall Finder
 
 - name: When performing a search, search the current folder by default
-  command: defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXDefaultSearchScope
+    type: string
+    value: "SCcf"
   notify:
     - killall Finder
 
@@ -61,7 +75,11 @@
 
 # Four-letter codes for the other view modes: `icnv`, `Nlsv`, `clmv`, `Flwv`
 - name: Use column view in all Finder windows by default
-  command: defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXPreferredViewStyle
+    type: string
+    value: "clmv"
   notify:
     - killall Finder
 

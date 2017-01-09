@@ -11,7 +11,10 @@
     - killall
 
 - name: Minimize window when double-clicking its title bar
-  command: defaults write NSGlobalDomain AppleActionOnDoubleClick -string "Minimize"
+  osx_defaults:
+  key: AppleActionOnDoubleClick
+  type: string
+  value: "Minimize"
   notify:
     - killall
 

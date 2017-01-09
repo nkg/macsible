@@ -19,7 +19,12 @@
   when: "'{{ terminal_profile_name }}' not in terminal_profile.stdout"
 
 - name: Ensure custom Terminal profile is set as default.
-  command: "defaults write com.apple.terminal '{{ item }}' -string {{ terminal_profile_name }}"
+  # command: "defaults write com.apple.terminal '{{ item }}' -string {{ terminal_profile_name }}"
+  osx_defaults:
+    domain: com.apple.terminal
+    key: "'{{ item }}'"
+    type: string
+    value: "{{ terminal_profile_name }}"
   with_items:
     - Default Window Settings
     - Startup Window Settings

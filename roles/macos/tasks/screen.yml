@@ -1,13 +1,23 @@
 ---
 
-- name: Save screenshots to the desktop
-  shell: defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+- name: Set save location for screenshots
+  # shell: defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: location
+    type: string
+    # TODO: Verify that we can use a shell variable like this here or whether we need an Ansible variable
+    value: "${HOME}/Desktop"
   notify:
     - killall
 
-# Other options: BMP, GIF, JPG, PDF, TIFF
-- name: Save screenshots in PNG format
-  command: defaults write com.apple.screencapture type -string "png"
+# Options: bmp, gif, jpg, pdf, png, tiff
+- name: Set format for saved screenshots
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: type
+    type: string
+    value: "png"
   notify:
     - killall
 

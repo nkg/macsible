@@ -74,11 +74,12 @@
   notify:
     - killall
 
-- name: Enable the MacBook Air SuperDrive on any Mac
-  shell: nvram boot-args="mbasd=1"
-  become: true
-  notify:
-    - killall Finder
+# TODO: Fails on macOS 10.12
+# - name: Enable the MacBook Air SuperDrive on any Mac
+#   shell: nvram boot-args="mbasd=1"
+#   become: true
+#   notify:
+#     - killall Finder
 
 - name: Show the ~/Library folder
   shell: chflags nohidden ~/Library

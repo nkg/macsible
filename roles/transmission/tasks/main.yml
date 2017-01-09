@@ -19,12 +19,10 @@
   notify: killall Transmission
 
 - name: Set path for incomplete downloads
-  # shell: defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Torrents/Incomplete"
   osx_defaults:
     domain: org.m0k.transmission
     key: IncompleteDownloadFolder
     type: string
-    # TODO: Verify that we can use a shell variable like this here or whether we need an Ansible variable
     value: "${HOME}/Downloads/Torrents/Incomplete"
   notify: killall Transmission
 

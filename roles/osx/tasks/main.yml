@@ -1,10 +1,8 @@
 ---
 
-# Sources:
+# Credits:
+# - https://mths.be/macos
 # - https://mths.be/osx
-
-# TODO: Currently avoiding "type: string" commands until this issue is resolved:
-# https://github.com/ansible/ansible-modules-extras/issues/1742
 
 # TODO: Currently avoiding "type: array" commands until they begin to behave.
 

@@ -1,12 +1,13 @@
 ---
 
 - name: Always show scrollbars
-  command: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-#   osx_defaults:
-#     domain: NSGlobalDomain
-#     key: AppleShowScrollBars
-#     type: string
-#     value: "Always" # Options: `WhenScrolling`, `Automatic`, `Always`
+  # command: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowScrollBars
+    type: string
+    # Options: "Always", "Automatic", "WhenScrolling"
+    value: "Always"
   notify:
     - killall
 
@@ -113,11 +114,11 @@
     - killall
 
 - name: Set interface style to Dark
-  command: defaults write NSGlobalDomain AppleInterfaceStyle -string Dark
-  # osx_defaults:
-  #   domain: NSGlobalDomain
-  #   key: AppleInterfaceStyle
-  #   type: string
-  #   value: Dark
+  # command: defaults write NSGlobalDomain AppleInterfaceStyle -string Dark
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleInterfaceStyle
+    type: string
+    value: Dark
   notify:
     - killall

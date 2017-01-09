@@ -12,9 +12,9 @@
 
 - name: Minimize window when double-clicking its title bar
   osx_defaults:
-  key: AppleActionOnDoubleClick
-  type: string
-  value: "Minimize"
+    key: AppleActionOnDoubleClick
+    type: string
+    value: "Minimize"
   notify:
     - killall
 

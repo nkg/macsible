@@ -1,6 +1,6 @@
 ---
 
-# Restarts a bunch of OS X apps & processes.
+# Restarts a bunch of macOS apps & processes.
 - name: killall
   command: killall "{{ item }}" > /dev/null 2>&1
   with_items:

@@ -12,7 +12,7 @@
     # Prep
     # --------------------------------------------------------------------------
 
-    - { role: osx, tags: ["osx","prep"] }
+    - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
     - { role: danbohea.spelling, tags: ["spelling","prep"] }
     - { brew_pkg_name: "lastpass-cli", brew_install_options: "with-pinentry,with-doc", tags: ["lastpass_cli","prep"], role: brew_pkg }

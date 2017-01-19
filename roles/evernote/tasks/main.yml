@@ -5,7 +5,6 @@
   notify: brew cask cleanup
 
 - name: "Beta: Enable code block"
-  # command: defaults write com.evernote.Evernote ENEnabledBetaFeatures -array "CodeBlock"
   osx_defaults:
     domain: com.evernote.Evernote
     key: ENEnabledBetaFeatures

@@ -1,12 +1,12 @@
 ---
 
 - name: Only use UTF-8 in Terminal.app
-  command: defaults write com.apple.terminal StringEncodings -array 4
-#   osx_defaults:
-#     domain: com.apple.terminal
-#     key: StringEncodings
-#     type: array
-#     value: [ 4 ]
+  # command: defaults write com.apple.terminal StringEncodings -array 4
+  osx_defaults:
+    domain: com.apple.terminal
+    key: StringEncodings
+    type: array
+    value: [ 4 ]
 
 - name: Get current default Terminal profile.
   command: defaults read com.apple.terminal 'Default Window Settings'

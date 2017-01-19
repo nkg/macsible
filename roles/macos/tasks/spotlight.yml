@@ -2,7 +2,12 @@
 
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
 - name: Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed
-  command: defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+  # command: defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+  osx_defaults:
+    domain: /.Spotlight-V100/VolumeConfiguration
+    key: Exclusions
+    type: array
+    value: ["/Volumes"]
   become: true
   notify:
     - killall

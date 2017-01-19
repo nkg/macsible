@@ -44,7 +44,8 @@ fi
 #  Install Ansible
 if ! exists ansible; then
   setStatusMessage "Installing Ansible"
-  sudo pip install ansible --quiet
+  # sudo pip install ansible --quiet
+  sudo pip install git+git://github.com/ansible/ansible.git@devel --quiet
 fi
 
 # Create requirements.yml

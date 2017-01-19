@@ -23,6 +23,8 @@ install:
 script:
   # Playbook syntax check
   - ansible-playbook mac.yml --syntax-check
+  # Test if osx_defaults array type is working
+  - ansible-playbook mac.yml -t "evernote"
   # Run Ansible playbook:
   # - Skip tasks/roles that we know cause issues in Travis
   # - Skip stage 3/4/5 roles as they don't *really* add much to the test

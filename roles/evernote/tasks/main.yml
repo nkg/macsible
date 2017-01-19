@@ -10,6 +10,6 @@
     domain: com.evernote.Evernote
     key: ENEnabledBetaFeatures
     type: array
-    value: "CodeBlock"
+    value: ["CodeBlock"]
   notify:
     - killall Evernote

@@ -60,7 +60,8 @@
     - { cask_app_name: "kaleidoscope", tags: ["kaleidoscope","stage_2"], role: danbohea.cask-app }
     - { role: tower, tags: ["tower","stage_2"] }
     - { cask_app_name: "sequel-pro", tags: ["sequel_pro","stage_2"], role: danbohea.cask-app }
-    - { cask_app_name: "transmit", tags: ["transmit","stage_2"], role: danbohea.cask-app }
+    # - { cask_app_name: "transmit", tags: ["transmit","stage_2"], role: danbohea.cask-app }
+    - { cask_app_name: "cyberduck", tags: ["cyberduck","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "imageoptim", tags: ["imageoptim","stage_2"], role: danbohea.cask-app }
     - { role: danbohea.sketch, tags: ["sketch","stage_2"] }
     - { cask_app_name: "xscope", tags: ["xscope","stage_2"], role: danbohea.cask-app }

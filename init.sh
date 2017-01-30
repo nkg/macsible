@@ -45,6 +45,7 @@ fi
 if ! exists ansible; then
   setStatusMessage "Installing Ansible"
   # sudo pip install ansible --quiet
+  # Note devel branch
   sudo pip install git+git://github.com/ansible/ansible.git@devel --quiet
 fi
 

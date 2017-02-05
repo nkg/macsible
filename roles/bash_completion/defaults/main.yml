@@ -4,7 +4,9 @@
 
 bash_completion_formulae:
   - brew-cask-completion
-  - composer-completion
+  # TODO: Fails build.
+  # No available formula with the name "homebrew/completions/composer-completion"
+  # - composer-completion
   - docker-completion
   - docker-compose-completion
   - docker-machine-completion

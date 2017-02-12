@@ -21,7 +21,6 @@
     - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
     - { role: danbohea.spelling, tags: ["spelling","prep"] }
-    - { brew_pkg_name: "lastpass-cli", brew_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
     - { role: atom, tags: ["atom","prep"] }

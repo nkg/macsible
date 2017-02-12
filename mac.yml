@@ -104,7 +104,7 @@
     - { cask_app_name: "vlc", tags: ["vlc","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "google-plus-auto-backup", role: danbohea.cask-app, tags: ["google_plus_auto_backup","stage_5"] }
     - { cask_app_name: "sketchup", role: danbohea.cask-app, tags: ["sketchup","stage_5"] }
-    # - { cask_app_name: "bartender", role: danbohea.cask-app, tags: ["bartender","stage_5"] }
+    - { cask_app_name: "bartender", role: danbohea.cask-app, tags: ["bartender","stage_5"] }
     - { cask_app_name: "doxie", tags: ["doxie","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "omnigraffle", tags: ["omnigraffle","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "appcleaner", tags: ["appcleaner","stage_5"], role: danbohea.cask-app }

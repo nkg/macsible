@@ -25,6 +25,7 @@ atom_packages:
   - linter-ansible-linting
   - linter-manager
   - open-terminal-here
+  - php-twig
   - pigments
   - project-manager
   - sort-lines

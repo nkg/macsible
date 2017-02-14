@@ -25,8 +25,9 @@
 # Can't use "creates" as the gem version number can change and "creates" doesn't
 # support wildcards :(
 
-# This works, it's just not idempotent and I hardly use rbenv much anymore.
-# - name: Install default gems to global Ruby version
-#   command: bash -lc "gem install {{ item }}"
-#   with_items:
-#     - "bundler"
+# TODO: Make idempotent
+- name: Install default gems to global Ruby version
+  command: bash -lc "gem install {{ item }}"
+  with_items:
+    - "bundler"
+    - "travis"

@@ -28,6 +28,4 @@
 # TODO: Make idempotent
 - name: Install default gems to global Ruby version
   command: bash -lc "gem install {{ item }}"
-  with_items:
-    - "bundler"
-    - "travis"
+  with_items: "{{ rbenv_global_gems }}"

@@ -25,3 +25,6 @@
 
 - src: https://github.com/danbohea/ansible-role-dock-items.git
   name: danbohea.dock-items
+
+- src: https://github.com/danbohea/ansible-role-rbenv.git
+  name: danbohea.rbenv

@@ -4,6 +4,7 @@
 - src: danbohea.dock-items
 - src: danbohea.flux
 - src: danbohea.google-chrome
+  version: master
 - src: danbohea.homebrew
 - src: danbohea.rbenv
 - src: danbohea.sketch

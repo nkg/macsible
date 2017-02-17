@@ -1,36 +1,36 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "0d0704af-4cea-45f7-993e-e1ef93dc23a2"
-  "autocomplete-plus": {}
-  "bottom-dock": {}
+    general:
+      _analyticsUserId: "0d0704af-4cea-45f7-993e-e1ef93dc23a2"
   "bracket-matcher":
     autocompleteSmartQuotes: false
     wrapSelectionsInBrackets: false
-  build: {}
   core:
+    disabledPackages: [
+      "link"
+      "open-on-github"
+      "welcome"
+    ]
+    projectHome: "/Users/danbohea/projects"
+    telemetryConsent: "limited"
     themes: [
       "isotope-ui"
       "afterglow-monokai-syntax"
     ]
+    useCustomTitleBar: true
   editor:
-    invisibles: {}
     showInvisibles: true
     softWrap: true
-  emmet: {}
   "exception-reporting":
     userId: "8d6dbc73-9252-7f14-3ad9-c234ba888bdd"
   "file-icons":
     coloured: false
     onChanges: true
   "git-plus":
-    splitPane: "Down"
-  "isotope-ui": {}
-  linter:
-    showErrorPanel: false
+    general:
+      _analyticsUserId: "70bb5faf-7215-4e94-884d-e28c9246fb1a"
   "markdown-preview":
     useGitHubStyle: true
-  "open-terminal-here":
-    command: "open -a iTerm.app \"$PWD\""
   pigments:
     ignoredScopes: [
       "\\.comment"
@@ -38,7 +38,6 @@
     markerType: "gutter"
   tabs:
     usePreviewTabs: true
-  "travis-ci-status": {}
   "tree-view":
     hideIgnoredNames: true
   welcome:

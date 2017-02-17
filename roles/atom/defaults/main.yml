@@ -7,9 +7,9 @@ atom_packages:
   - atom-beautify
   - autoclose-html
   - autocomplete-plus
-  # - autocomplete-sass # TODO: Currently failing on installation
   - bottom-dock
   - double-tag
+  - editorconfig
   - emmet
   - file-icons
   - git-plus
@@ -24,12 +24,12 @@ atom_packages:
   - linter
   - linter-ansible-linting
   - linter-manager
+  - markdown-writer
   - open-terminal-here
   - php-twig
   - pigments
   - project-manager
   - sort-lines
-  - split-diff
   - svg-preview
   - todo-manager
-  - travis-ci-status
+  - tree-view-autoresize

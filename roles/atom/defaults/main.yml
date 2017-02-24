@@ -32,4 +32,5 @@ atom_packages:
   - sort-lines
   - svg-preview
   - todo-manager
+  - travis-ci-status
   - tree-view-autoresize

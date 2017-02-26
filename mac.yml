@@ -20,13 +20,14 @@
 
     - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
-    - { role: danbohea.spelling, tags: ["spelling","prep"] }
+    - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
     - { role: atom, tags: ["atom","prep"] }
     - { role: quick_look_plugins, tags: ["quick_look_plugins","prep"] }
     - { cask_app_name: "bettertouchtool", tags: ["bettertouchtool","prep"], role: danbohea.cask-app }
     - { role: terminal, tags: ["terminal","prep"] }
+    - { role: danbohea.spelling, tags: ["spelling","prep"] }
 
     # Stage 1: Essential day-to-day
     # --------------------------------------------------------------------------
@@ -34,7 +35,6 @@
     - { role: dotfiles, tags: ["dotfiles","stage_1"] }
     - { role: duti, tags: ["duti","stage_1"] }
     - { role: time_machine, tags: ["time_machine","stage_1"] }
-    - { role: danbohea.google-chrome, tags: ["google_chrome","stage_1"] }
     - { role: moom, tags: ["moom","stage_1"] }
     - { role: danbohea.flux, tags: ["flux","stage_1"] }
     - { role: evernote, tags: ["evernote","stage_1"] }

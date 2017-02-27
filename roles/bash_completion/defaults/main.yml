@@ -2,12 +2,9 @@
 
 # https://github.com/Homebrew/homebrew-completions
 
+# NOTE: The composer & docker completion formulae have been problematic and so
+# have been removed. Be cautious about adding them back!
+
 bash_completion_formulae:
   - brew-cask-completion
-  # TODO: Fails build.
-  # No available formula with the name "homebrew/completions/composer-completion"
-  # - composer-completion
-  - docker-completion
-  - docker-compose-completion
-  - docker-machine-completion
   - vagrant-completion

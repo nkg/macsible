@@ -58,6 +58,8 @@
   notify:
     - killall Path Finder
 
+# TODO: Ensure ~/Projects exists here.
+
 - name: "Set starting directory to ~/Projects"
   osx_defaults:
     domain: com.cocoatech.PathFinder

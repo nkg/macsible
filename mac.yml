@@ -55,6 +55,7 @@
     - { role: composer, tags: ["composer","stage_2"] }
     - { role: danbohea.rbenv, tags: ["rbenv","stage_2","no_ci"] }
     - { role: node_pkgs, tags: ["node_pkgs","stage_2"] }
+    - { brew_pkg_name: "python", tags: ["python","stage_2"], role: brew_pkg }
     - { role: pip_pkgs, tags: ["pip_pkgs","stage_2"] }
     - { cask_app_name: "dash", tags: ["dash","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "kaleidoscope", tags: ["kaleidoscope","stage_2"], role: danbohea.cask-app }

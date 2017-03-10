@@ -20,6 +20,7 @@ atom_packages:
   - highlight-selected
   - isotope-ui
   - language-ansible
+  - language-docker
   - language-patch
   - linter
   - linter-manager

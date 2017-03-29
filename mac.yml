@@ -57,6 +57,7 @@
     - { role: node_pkgs, tags: ["node_pkgs","stage_2"] }
     - { brew_pkg_name: "python", tags: ["python","stage_2"], role: brew_pkg }
     - { role: pip_pkgs, tags: ["pip_pkgs","stage_2"] }
+    - { brew_pkg_name: "yarn", tags: ["yarn","stage_2"], role: brew_pkg }
     - { cask_app_name: "dash", tags: ["dash","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "kaleidoscope", tags: ["kaleidoscope","stage_2"], role: danbohea.cask-app }
     - { role: tower, tags: ["tower","stage_2"] }

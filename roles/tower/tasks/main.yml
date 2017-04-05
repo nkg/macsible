@@ -4,15 +4,27 @@
   homebrew_cask: name=tower state=present
   notify: brew cask cleanup
 
-- name: "{{ item.name }}"
+- name: Use Homebrew Git binary
   osx_defaults:
     domain: com.fournova.Tower2
-    key: "{{ item.key }}"
+    key: GTUserDefaultsGitBinary
     type: string
-    value: "{{ item.value }}"
-  with_items:
-    - { name: "Use Homebrew Git binary", key: "GTUserDefaultsGitBinary", value: "/usr/local/bin/git"}
-    - { name: "Set default directory for cloned projects", key: "GTUserDefaultsDefaultCloningDirectory", value: "${HOME}/Projects"}
-    # TODO: Add Kaleidoscope dep?
-    - { name: "Set diff tool", key: "GTUserDefaultsDiffToolIdentifier", value: "kaleidoscope"}
+    value: /usr/local/bin/git
+  notify: killall Tower
+
+- name: Set default directory for cloned projects
+  osx_defaults:
+    domain: com.fournova.Tower2
+    key: GTUserDefaultsDefaultCloningDirectory
+    type: string
+    value: ${HOME}/Projects
+  notify: killall Tower
+
+# TODO: Check if Kaleidoscope is installed first.
+- name: Set diff tool
+  osx_defaults:
+    domain: com.fournova.Tower2
+    key: GTUserDefaultsDiffToolIdentifier
+    type: string
+    value: kaleidoscope
   notify: killall Tower

@@ -104,7 +104,6 @@
     - { cask_app_name: "daisydisk", tags: ["daisydisk","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "flash-player", tags: ["flash_player","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "google-drive", tags: ["google_drive","stage_5"], role: danbohea.cask-app }
-    - { cask_app_name: "libreoffice", tags: ["libreoffice","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "name-mangler", tags: ["name_mangler","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "skitch", tags: ["skitch","stage_5"], role: danbohea.cask-app }
     - { cask_app_name: "vlc", tags: ["vlc","stage_5"], role: danbohea.cask-app }

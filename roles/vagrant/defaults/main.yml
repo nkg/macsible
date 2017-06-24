@@ -4,5 +4,5 @@ vagrant_plugins:
   - vagrant-cachier
   # TODO: Commented out as install is currently failing.
   # - vagrant-hostsupdater
-  - vagrant-parallels
+  # - vagrant-parallels
   - vagrant-triggers

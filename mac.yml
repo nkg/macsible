@@ -45,6 +45,7 @@
     - { cask_app_name: "the-unarchiver", tags: ["the_unarchiver","stage_1"], role: danbohea.cask-app }
     - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1"], role: danbohea.cask-app }
     - { role: danbohea.skype, tags: ["skype","stage_1"] }
+    # TODO: Add Muzzle https://muzzleapp.com (no Cask app as yet)
 
     # Stage 2: Essential dev
     # --------------------------------------------------------------------------

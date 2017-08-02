@@ -93,6 +93,7 @@
     - { cask_app_name: "opera", tags: ["opera","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "opera-mobile-emulator", tags: ["opera_mobile_emulator","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "adobe-creative-cloud", tags: ["adobe_creative_cloud","stage_4"], role: danbohea.cask-app }
+    - { cask_app_name: "malwarebytes-anti-malware", tags: ["malwarebytes","stage_4"], role: danbohea.cask-app }
 
     # Stage 5: No-frills cask installed apps that CI can skip.
     # This makes for faster tests & keeps Travis log verbosity to a minimum.

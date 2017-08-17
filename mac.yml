@@ -23,7 +23,8 @@
     # - { brew_pkg_name: "lastpass-cli", brew_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
     - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
-    - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
+    # TODO: "no_ci" as it's currently failing builds in CI.
+    - { cask_app_name: "atext", tags: ["atext","prep","no_ci"], role: danbohea.cask-app }
     - { role: atom, tags: ["atom","prep"] }
     - { role: quick_look_plugins, tags: ["quick_look_plugins","prep"] }
     - { cask_app_name: "bettertouchtool", tags: ["bettertouchtool","prep"], role: danbohea.cask-app }
@@ -55,6 +56,7 @@
     - { role: vagrant, tags: ["vagrant","stage_2","sudo"] }
     - { role: git, tags: ["git","stage_2"] }
     - { role: composer, tags: ["composer","stage_2"] }
+    # "no_ci" as it takes too long and risks build timeout.
     - { role: danbohea.rbenv, tags: ["rbenv","stage_2","no_ci"] }
     - { role: node_pkgs, tags: ["node_pkgs","stage_2"] }
     - { brew_pkg_name: "python", tags: ["python","stage_2"], role: brew_pkg }

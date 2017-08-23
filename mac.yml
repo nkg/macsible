@@ -51,7 +51,6 @@
     # Stage 2: Essential dev
     # --------------------------------------------------------------------------
 
-    - { cask_app_name: "parallels-desktop", tags: ["parallels_desktop","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "virtualbox", tags: ["virtualbox","stage_2"], role: danbohea.cask-app }
     - { role: vagrant, tags: ["vagrant","stage_2","sudo"] }
     - { role: git, tags: ["git","stage_2"] }

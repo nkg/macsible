@@ -103,7 +103,6 @@
     - { cask_app_name: "limechat", tags: ["limechat","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "daisydisk", tags: ["daisydisk","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "flash-player", tags: ["flash_player","stage_4"], role: danbohea.cask-app }
-    - { cask_app_name: "google-drive", tags: ["google_drive","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "name-mangler", tags: ["name_mangler","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "skitch", tags: ["skitch","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "vlc", tags: ["vlc","stage_4"], role: danbohea.cask-app }

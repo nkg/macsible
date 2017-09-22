@@ -106,7 +106,7 @@
     - { cask_app_name: "name-mangler", tags: ["name_mangler","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "skitch", tags: ["skitch","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "vlc", tags: ["vlc","stage_4"], role: danbohea.cask-app }
-    - { cask_app_name: "google-plus-auto-backup", role: danbohea.cask-app, tags: ["google_plus_auto_backup","stage_4"] }
+    - { cask_app_name: "google-backup-and-sync", role: danbohea.cask-app, tags: ["google_backup_and_sync","stage_4"] }
     - { cask_app_name: "sketchup", role: danbohea.cask-app, tags: ["sketchup","stage_4"] }
     - { cask_app_name: "bartender", role: danbohea.cask-app, tags: ["bartender","stage_4"] }
     - { cask_app_name: "doxie", tags: ["doxie","stage_4"], role: danbohea.cask-app }

@@ -55,7 +55,6 @@
     - { role: vagrant, tags: ["vagrant","stage_2","sudo"] }
     - { role: git, tags: ["git","stage_2"] }
     - { role: composer, tags: ["composer","stage_2"] }
-    # "no_ci" as it takes too long and risks build timeout.
     - { role: danbohea.rbenv, tags: ["rbenv","stage_2","no_ci"] }
     - { role: node_pkgs, tags: ["node_pkgs","stage_2"] }
     - { brew_pkg_name: "python", tags: ["python","stage_2"], role: brew_pkg }
@@ -87,7 +86,6 @@
     - { cask_app_name: "docker", tags: ["docker","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "kitematic", tags: ["kitematic","stage_4"], role: danbohea.cask-app }
     - { role: transmission, tags: ["transmission","stage_4"] }
-    # - { brew_pkg_name: "bfg", tags: ["bfg","stage_4"], role: brew_pkg }
     - { brew_pkg_name: "tree", tags: ["tree","stage_4"], role: brew_pkg }
     - { brew_pkg_name: "wget", tags: ["wget","stage_4"], role: brew_pkg }
     - { cask_app_name: "android-platform-tools", tags: ["android_platform_tools","stage_4"], role: danbohea.cask-app }

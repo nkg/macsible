@@ -8,6 +8,8 @@
 # - https://github.com/ansible/ansible/issues/19585
 # - https://github.com/ansible/ansible/pull/19899
 
+# TODO: `include` is now depcrecated. Update to use `import_tasks`.
+# https://github.com/danbohea/macsible/issues/1
 - include: activity_monitor.yml
 - include: dock.yml
 - include: finder.yml

@@ -6,17 +6,15 @@ atom_packages:
   - afterglow-monokai-syntax
   - atom-beautify
   - atom-jinja2
+  - atom-terminal-tab
   - autoclose-html
   - autocomplete-plus
-  - bottom-dock
   - double-tag
   - editorconfig
   - emmet
   - file-icons
   - git-plus
   - git-time-machine
-  - grunt-manager
-  - gulp-manager
   - highlight-line
   - highlight-selected
   - isotope-ui
@@ -34,7 +32,6 @@ atom_packages:
   - sort-lines
   - svg-preview
   - tabs-to-spaces
-  - todo-manager
   - todo-show
   - travis-ci-status
   - tree-view-autoresize

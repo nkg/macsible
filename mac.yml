@@ -38,14 +38,14 @@
     - { role: duti, tags: ["duti","stage_1"] }
     - { role: time_machine, tags: ["time_machine","stage_1"] }
     - { role: moom, tags: ["moom","stage_1"] }
-    - { role: danbohea.flux, tags: ["flux","stage_1"] }
+    - { role: danbohea.flux, tags: ["flux","stage_1","no_ci"] }
     - { role: evernote, tags: ["evernote","stage_1"] }
     - { cask_app_name: "caffeine", tags: ["caffeine","stage_1","sudo"], role: danbohea.cask-app }
     - { cask_app_name: "alfred", tags: ["alfred","stage_1","sudo"], role: danbohea.cask-app }
     - { role: path_finder, tags: ["path_finder","stage_1"] }
     - { cask_app_name: "the-unarchiver", tags: ["the_unarchiver","stage_1"], role: danbohea.cask-app }
     - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1"], role: danbohea.cask-app }
-    - { role: danbohea.skype, tags: ["skype","stage_1"] }
+    - { role: danbohea.skype, tags: ["skype","stage_1","no_ci"] }
     # TODO: Add Muzzle https://muzzleapp.com (no Cask app as yet)
 
     # Stage 2: Essential dev
@@ -67,7 +67,7 @@
     - { cask_app_name: "sequel-pro", tags: ["sequel_pro","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "transmit", tags: ["transmit","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "imageoptim", tags: ["imageoptim","stage_2"], role: danbohea.cask-app }
-    - { role: danbohea.sketch, tags: ["sketch","stage_2"] }
+    - { role: danbohea.sketch, tags: ["sketch","stage_2","no_ci"] }
     - { cask_app_name: "xscope", tags: ["xscope","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "phpstorm", tags: ["phpstorm","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "slack", tags: ["slack","stage_2"], role: danbohea.cask-app }

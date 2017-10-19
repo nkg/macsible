@@ -35,5 +35,6 @@ atom_packages:
   - svg-preview
   - tabs-to-spaces
   - todo-manager
+  - todo-show
   - travis-ci-status
   - tree-view-autoresize

@@ -8,6 +8,7 @@ atom_packages:
   - atom-jinja2
   - atom-terminal-tab
   - autoclose-html
+  - autocomplete-paths
   - autocomplete-plus
   - double-tag
   - editorconfig
@@ -25,6 +26,7 @@ atom_packages:
   - linter-ansible-syntax
   - linter-manager
   - markdown-writer
+  - open-recent
   - open-terminal-here
   - php-twig
   - pigments

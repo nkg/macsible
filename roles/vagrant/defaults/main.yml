@@ -3,8 +3,6 @@
 vagrant_plugins:
   - vagrant-auto_network
   - vagrant-cachier
-  # TODO: Commented out as install is currently failing.
-  # - vagrant-hostsupdater
-  # - vagrant-parallels
+  - vagrant-hostsupdater
   - vagrant-triggers
   - vagrant-vbguest

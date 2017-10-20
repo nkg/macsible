@@ -13,6 +13,8 @@
     curl -sS https://getcomposer.org/installer | php
     creates='/usr/local/bin/composer'
     chdir='/tmp'
+  args:
+    warn: false
   become: true
 
 - name: Move composer to /usr/local/bin (global installation)

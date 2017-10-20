@@ -1,17 +1,31 @@
 ---
 - name: Mac setup
-  hosts: localhost
+  hosts: all
   connection: local
 
   vars_files:
     - config.yml
     - config.local.yml
 
-  pre_tasks:
-    - name: Ensure host is running macOS
-      fail: msg="The host (target) system is not running macOS."
-      when: ansible_os_family != "Darwin"
-      tags: always
+    pre_tasks:
+
+      - name: Verify Ansible version.
+        assert:
+          that: "ansible_version.full | version_compare('2.1', '>=')"
+          msg: "You must update Ansible to at least 2.1 to use this version of Macsible."
+        tags: always
+
+      - name: Verify target system is running macOS.
+        assert:
+          that: "ansible_distribution == 'MacOSX'"
+          msg: "The target system is not running macOS."
+        tags: always
+
+      - name: Verify macOS version.
+        assert:
+          that: "ansible_distribution_version | version_compare('10.10', '>=')"
+          msg: "The target system must be running macOS 10.10 or higher to use this version of Macsible."
+        tags: always
 
   roles:
 

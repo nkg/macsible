@@ -8,17 +8,15 @@
 # - https://github.com/ansible/ansible/issues/19585
 # - https://github.com/ansible/ansible/pull/19899
 
-# TODO: `include` is now depcrecated. Update to use `import_tasks`.
-# https://github.com/danbohea/macsible/issues/1
-- include: activity_monitor.yml
-- include: dock.yml
-- include: finder.yml
-- include: general_ui_ux.yml
-- include: mission_control.yml
-- include: safari_webkit.yml
-- include: screen.yml
-- include: ssd.yml
-- include: spotlight.yml
-- include: textedit.yml
-- include: time_machine.yml
-- include: trackpad_mouse.yml
+- import_tasks: activity_monitor.yml
+- import_tasks: dock.yml
+- import_tasks: finder.yml
+- import_tasks: general_ui_ux.yml
+- import_tasks: mission_control.yml
+- import_tasks: safari_webkit.yml
+- import_tasks: screen.yml
+- import_tasks: ssd.yml
+- import_tasks: spotlight.yml
+- import_tasks: textedit.yml
+- import_tasks: time_machine.yml
+- import_tasks: trackpad_mouse.yml

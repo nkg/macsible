@@ -10,11 +10,10 @@
 
     - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
-    # - { brew_pkg_name: "lastpass-cli", brew_pkg_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
+    - { brew_pkg_name: "lastpass-cli", brew_pkg_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
     - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
-    # TODO: "no_ci" as it's currently failing builds in CI.
-    - { cask_app_name: "atext", tags: ["atext","prep","no_ci"], role: danbohea.cask-app }
+    - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
     - { role: atom, tags: ["atom","prep"] }
     - { role: quick_look_plugins, tags: ["quick_look_plugins","prep"] }
     - { cask_app_name: "bettertouchtool", tags: ["bettertouchtool","prep"], role: danbohea.cask-app }

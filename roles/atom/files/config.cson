@@ -17,10 +17,11 @@
       "isotope-ui"
       "afterglow-monokai-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     showInvisibles: true
     softWrap: true
+    tabType: "soft"
   "exception-reporting":
     userId: "8d6dbc73-9252-7f14-3ad9-c234ba888bdd"
   "file-icons":
@@ -29,6 +30,9 @@
   "git-plus":
     general:
       _analyticsUserId: "70bb5faf-7215-4e94-884d-e28c9246fb1a"
+  "linter-ui-default":
+    panelHeight: 114
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   pigments:

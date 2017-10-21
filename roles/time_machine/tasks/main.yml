@@ -2,7 +2,7 @@
 
 - name: Ensure excluded directory exists
   file:
-    path: {{ ansible_env.HOME }}/{{ time_machine_ex_dir_name }}
+    path: "{{ ansible_env.HOME }}/{{ time_machine_ex_dir_name }}"
     state: directory
 
 # TODO: Adding Time Machine exclusions using tmutil doesn't seem to add anything

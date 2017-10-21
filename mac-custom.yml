@@ -3,30 +3,6 @@
   hosts: all
   connection: local
 
-  vars_files:
-    - config.yml
-    - config.local.yml
-
-  pre_tasks:
-
-    - name: Verify Ansible version.
-      assert:
-        that: "ansible_version.full | version_compare('2.1', '>=')"
-        msg: "You must update Ansible to at least 2.1 to use this version of Macsible."
-      tags: always
-
-    - name: Verify target system is running macOS.
-      assert:
-        that: "ansible_distribution == 'MacOSX'"
-        msg: "The target system is not running macOS."
-      tags: always
-
-    - name: Verify macOS version.
-      assert:
-        that: "ansible_distribution_version | version_compare('10.10', '>=')"
-        msg: "The target system must be running macOS 10.10 or higher to use this version of Macsible."
-      tags: always
-
   roles:
 
     # Prep
@@ -132,11 +108,6 @@
     - { role: login_items, tags: ["login_items","last","always"] }
 
   post_tasks:
-
-    - osx_say:
-        msg: "This playbook is done diddly done."
-        voice: Fred
-      tags: no_ci
 
     - debug:
         msg: "Some changes may not take effect until you've restarted your Mac."

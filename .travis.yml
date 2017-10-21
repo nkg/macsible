@@ -12,8 +12,6 @@ matrix:
       osx_image: xcode7.3
 
 install:
-  # Debug info
-  - python --version
   # Run setup script
   - bash init.sh
   # Debug info
@@ -22,8 +20,8 @@ install:
 
 script:
   # Playbook syntax check
-  - ansible-playbook mac.yml --syntax-check
+  - ansible-playbook macsible.yml --syntax-check
   # Run Ansible playbook:
   # - Skip tasks/roles that we know cause issues in Travis
   # - Skip stage 3/4/5 roles as they don't *really* add much to the test
-  - ansible-playbook mac.yml --skip-tags "no_ci,stage_3,stage_4"
+  - ansible-playbook macsible.yml --skip-tags "no_ci,stage_3,stage_4"

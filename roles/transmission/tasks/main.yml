@@ -6,7 +6,7 @@
 
 - name: Ensure location for incomplete downloads exists
   file:
-    path: /Users/{{ ansible_env.USER }}/Downloads/Torrents/Incomplete
+    path: {{ ansible_env.HOME }}/Downloads/Torrents/Incomplete
     state: directory
     follow: yes
 

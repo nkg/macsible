@@ -5,12 +5,12 @@
 - name: Install {{ brew_pkg_name }}
   homebrew:
     name: "{{ brew_pkg_name }}"
-    install_options: "{{ brew_install_options }}"
+    install_options: "{{ brew_pkg_install_options }}"
   notify: brew cleanup
-  # when: brew_install_options is defined
+  # when: brew_pkg_install_options is defined
 
 # - name: Install {{ brew_pkg_name }}
 #   homebrew:
 #     name: "{{ brew_pkg_name }}"
 #   notify: brew cleanup
-#   when: brew_install_options is not defined
+#   when: brew_pkg_install_options is not defined

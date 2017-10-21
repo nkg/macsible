@@ -10,7 +10,7 @@
 
     - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
-    # - { brew_pkg_name: "lastpass-cli", brew_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
+    # - { brew_pkg_name: "lastpass-cli", brew_pkg_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
     - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     # TODO: "no_ci" as it's currently failing builds in CI.

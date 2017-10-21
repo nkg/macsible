@@ -4,8 +4,10 @@ quick_look_plugins_list:
   - betterzipql
   - qlcolorcode
   - qlmarkdown
+  - qlmobi
   - qlprettypatch
   - qlstephen
+  - quicklookase
   - quicklook-csv
   - quicklook-json
   - suspicious-package

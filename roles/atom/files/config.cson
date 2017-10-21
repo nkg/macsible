@@ -31,7 +31,7 @@
     general:
       _analyticsUserId: "70bb5faf-7215-4e94-884d-e28c9246fb1a"
   "linter-ui-default":
-    panelHeight: 114
+    panelHeight: 150
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
@@ -40,6 +40,10 @@
       "\\.comment"
     ]
     markerType: "gutter"
+  "spell-check":
+    locales: [
+      "en-GB"
+    ]
   tabs:
     usePreviewTabs: true
   "tree-view":

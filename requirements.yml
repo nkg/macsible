@@ -1,5 +1,7 @@
 ---
 
+- src: danbohea.atom
+  version: master
 - src: danbohea.cask-app
   version: master
 - src: danbohea.dock-items

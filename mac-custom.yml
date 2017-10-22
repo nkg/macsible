@@ -14,7 +14,7 @@
     - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
-    - { role: atom, tags: ["atom","prep"] }
+    - { role: danbohea.atom, tags: ["atom","prep","no_ci"] }
     - { role: danbohea.quick-look-plugins, tags: ["quick_look_plugins","prep","no_ci"] }
     - { cask_app_name: "bettertouchtool", tags: ["bettertouchtool","prep"], role: danbohea.cask-app }
     - { role: terminal, tags: ["terminal","prep"] }

@@ -2,6 +2,45 @@
 
 # Override default role variables here.
 
+# atom
+# ------------------------------------------------------------------------------
+
+atom_packages:
+  - afterglow-monokai-syntax
+  - atom-beautify
+  - atom-jinja2
+  - atom-terminal-tab
+  - autoclose-html
+  - autocomplete-paths
+  - autocomplete-plus
+  - double-tag
+  - editorconfig
+  - emmet
+  - file-icons
+  - git-plus
+  - git-time-machine
+  - highlight-line
+  - highlight-selected
+  - isotope-ui
+  - language-ansible
+  - language-docker
+  - language-patch
+  - linter
+  - linter-ansible-syntax
+  - linter-manager
+  - markdown-writer
+  - open-recent
+  - open-terminal-here
+  - php-twig
+  - pigments
+  - project-manager
+  - sort-lines
+  - svg-preview
+  - tabs-to-spaces
+  - todo-show
+  - travis-ci-status
+  - tree-view-autoresize
+
 # dock items
 # ------------------------------------------------------------------------------
 

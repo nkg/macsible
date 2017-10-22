@@ -10,6 +10,8 @@
   version: master
 - src: danbohea.homebrew
   version: master
+- src: danbohea.quick-look-plugins
+  version: master
 - src: danbohea.rbenv
   version: master
 - src: danbohea.sketch

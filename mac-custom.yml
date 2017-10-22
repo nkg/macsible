@@ -58,7 +58,6 @@
     - { cask_app_name: "phpstorm", tags: ["phpstorm","stage_2"], role: danbohea.cask-app }
     - { cask_app_name: "slack", tags: ["slack","stage_2"], role: danbohea.cask-app }
     - { role: bash_completion, tags: ["bash_completion","stage_2"] }
-    - { cask_app_name: "toggldesktop", tags: ["toggldesktop","stage_2","no_ci"], role: danbohea.cask-app }
 
     # Stage 3: Projects
     # --------------------------------------------------------------------------
@@ -70,6 +69,7 @@
     # verbosity to a minimum.
     # --------------------------------------------------------------------------
 
+    - { cask_app_name: "toggldesktop", tags: ["toggldesktop","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "docker", tags: ["docker","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "kitematic", tags: ["kitematic","stage_4"], role: danbohea.cask-app }
     - { role: transmission, tags: ["transmission","stage_4"] }

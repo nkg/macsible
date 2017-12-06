@@ -24,6 +24,7 @@ atom_packages:
   - isotope-ui
   - language-ansible
   - language-docker
+  - language-nunjucks
   - language-patch
   - linter
   - linter-ansible-syntax

@@ -28,6 +28,7 @@ atom_packages:
   - language-patch
   - linter
   - linter-ansible-syntax
+  - linter-jsonlint
   - linter-manager
   - markdown-writer
   - open-recent

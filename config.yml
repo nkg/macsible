@@ -8,6 +8,7 @@
 atom_packages:
   - afterglow-monokai-syntax
   - atom-beautify
+  - atom-json-color
   - atom-jinja2
   - atom-terminal-tab
   - autoclose-html

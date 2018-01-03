@@ -36,6 +36,7 @@
     - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1"], role: danbohea.cask-app }
     - { role: danbohea.skype, tags: ["skype","stage_1","no_ci"] }
     - { cask_app_name: "muzzle", tags: ["muzzle","stage_1"], role: danbohea.cask-app }
+    - { cask_app_name: "nordvpn", tags: ["nordvpn","stage_1"], role: danbohea.cask-app }
 
     # Stage 2: Essential dev
     # --------------------------------------------------------------------------

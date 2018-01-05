@@ -5,4 +5,5 @@ node_pkgs_list:
   - grunt-cli
   - gulp
   - imageoptim-cli
+  - tldr
   - yo

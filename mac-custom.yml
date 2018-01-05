@@ -11,7 +11,7 @@
     - { role: macos, tags: ["macos","prep"] }
     - { role: ssh, tags: ["ssh","prep"] }
     - { brew_pkg_name: "lastpass-cli", brew_pkg_install_options: "with-pinentry", tags: ["lastpass_cli","prep"], role: brew_pkg }
-    - { role: danbohea.google-chrome, tags: ["google_chrome","prep"] }
+    - { cask_app_name: "firefox", tags: ["firefox","prep"], role: danbohea.cask-app }
     - { cask_app_name: "dropbox", tags: ["dropbox","prep"], role: danbohea.cask-app }
     - { cask_app_name: "atext", tags: ["atext","prep"], role: danbohea.cask-app }
     - { role: danbohea.atom, tags: ["atom","prep","no_ci"] }
@@ -36,6 +36,7 @@
     - { cask_app_name: "keyboard-maestro", tags: ["keyboard_maestro","stage_1"], role: danbohea.cask-app }
     - { role: danbohea.skype, tags: ["skype","stage_1","no_ci"] }
     - { cask_app_name: "muzzle", tags: ["muzzle","stage_1"], role: danbohea.cask-app }
+    - { cask_app_name: "nordvpn", tags: ["nordvpn","stage_1"], role: danbohea.cask-app }
 
     # Stage 2: Essential dev
     # --------------------------------------------------------------------------
@@ -69,6 +70,7 @@
     # verbosity to a minimum.
     # --------------------------------------------------------------------------
 
+    - { role: danbohea.google-chrome, tags: ["google_chrome","stage_4"] }
     - { cask_app_name: "toggldesktop", tags: ["toggldesktop","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "docker", tags: ["docker","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "kitematic", tags: ["kitematic","stage_4"], role: danbohea.cask-app }
@@ -78,7 +80,6 @@
     - { brew_pkg_name: "ssh-copy-id", tags: ["ssh-copy-id","stage_4"], role: brew_pkg }
     - { cask_app_name: "android-platform-tools", tags: ["android_platform_tools","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "istat-menus", role: danbohea.cask-app, tags: ["istat_menus","stage_4","no_ci"] }
-    - { cask_app_name: "firefox", tags: ["firefox","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "opera", tags: ["opera","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "opera-mobile-emulator", tags: ["opera_mobile_emulator","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "adobe-creative-cloud", tags: ["adobe_creative_cloud","stage_4"], role: danbohea.cask-app }
@@ -100,6 +101,7 @@
     - { cask_app_name: "appcleaner", tags: ["appcleaner","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "steam", tags: ["steam","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "licecap", tags: ["licecap","stage_4"], role: danbohea.cask-app }
+    - { cask_app_name: "arduino", tags: ["arduino","stage_4"], role: danbohea.cask-app }
 
     # Last
     # --------------------------------------------------------------------------

@@ -18,6 +18,7 @@
   changed_when: false
   when: terminal_profile_name not in terminal_profile.stdout
 
+# TODO: This doesn't seem to work in Sierra anymore.
 - name: Ensure custom Terminal profile is set as default.
   osx_defaults:
     domain: com.apple.terminal

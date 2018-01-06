@@ -48,12 +48,13 @@ atom_packages:
 # dock items
 # ------------------------------------------------------------------------------
 
+# Filenames must include .app extension.
 dock_apps:
   - Path Finder.app
   - Dash.app
   - Skype.app
   - Slack.app
-  - Google Chrome.app
+  - Firefox.app
   - Evernote.app
   - Skitch.app
   - Calendar.app

@@ -48,6 +48,7 @@ atom_packages:
 # dock items
 # ------------------------------------------------------------------------------
 
+# Filenames must include .app extension.
 dock_apps:
   - Path Finder.app
   - Dash.app

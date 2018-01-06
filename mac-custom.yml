@@ -84,7 +84,6 @@
     - { cask_app_name: "opera-mobile-emulator", tags: ["opera_mobile_emulator","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "adobe-creative-cloud", tags: ["adobe_creative_cloud","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "malwarebytes-anti-malware", tags: ["malwarebytes","stage_4"], role: danbohea.cask-app }
-    - { cask_app_name: "google-hangouts", tags: ["google_hangouts","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "hazel", tags: ["hazel","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "cakebrew", tags: ["cakebrew","stage_4"], role: danbohea.cask-app }
     - { cask_app_name: "limechat", tags: ["limechat","stage_4"], role: danbohea.cask-app }
